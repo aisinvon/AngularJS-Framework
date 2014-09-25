@@ -1,0 +1,79 @@
+//common
+html, body, .wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+img{
+  width: 100%;
+  font-size: 20px;
+}
+
+//loading
+.app-loading{
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  img{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -8px;
+  }
+}
+.app-loading.fixedHd{
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+//header
+header{
+  min-height: 40px;
+  padding: 0 10px;
+  background: #3464a6;
+  color: #fff;
+
+  h1{
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+header.fixedHd{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+//container
+.container.fixedHd{
+  padding-top: 40px;
+}
+.container.fixedFt{
+  padding-bottom: 50px;
+}
+.container.fixedHdFt{
+  padding: 40px 0 50px 0;
+}
+
+//footer
+footer{
+  min-height: 40px;
+  padding: 0 10px;
+  background: #3464a6;
+  color: #fff;
+}
+footer.fixedFt{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

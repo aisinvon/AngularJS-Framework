@@ -1,0 +1,1 @@
+define(["app","appConfig"],function(e,t){e.controller("ctrlIndex",["$scope","$http","$routeParams",function(e,n,r){n({method:"GET",url:t.apiList.brandList.url}).success(function(t,n,r,i){e.item=t}).error(function(e,t,n,r){console.log("error!")})}])});

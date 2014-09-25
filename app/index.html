@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>项目名称</title>
+    <meta name="description" content="">
+    <!--special for mobile web-->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <!--icon-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/touch/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/touch/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/touch/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/touch/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" sizes="196x196" href="images/touch/touch-icon-196x196.png">
+    <link rel="shortcut icon" href="images/touch/apple-touch-icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/apple-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#222222">
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild -->
+</head>
+<body>
+
+<div id="wrapper" class="wrapper" ng-view ng-hide="loading"></div>
+
+<div ng-show="loading" class="app-loading {{fixedHd}}">
+    <img src="../images/loading.GIF" alt="Loading..."/>
+</div>
+
+<script src="bower_components/requirejs/require.js" data-main="scripts/main.js"></script>
+</body>
+</html>

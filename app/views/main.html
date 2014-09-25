@@ -1,0 +1,31 @@
+<div ng-include src="'views/partials/header.html'"></div>
+
+<div class="container {{fixedHd}} {{fixedFt}} {{fixedHdFt}}" >
+    <div class="jumbotron">
+        <h1><a href="#serial">{{item.data.serialName}}</a></h1>
+        <h1><a href="#cartype">{{item.data.serialName}}</a></h1>
+    </div>
+
+    <img ng-src="{{item.data.coverImgUrl}}" alt=""/>
+
+    <div ng-click="save()" class="row marketing">
+        <h4>{{item.cacheTime}}</h4>
+        <h4>{{newItem.time}}</h4>
+    </div>
+
+    <p>{{loading}}</p>
+    <p>{{loading}}</p>
+    <p>{{loading}}</p>
+    <p>{{loading}}</p>
+    <p>{{loading}}</p>
+    <p>{{loading}}</p>
+    <p>{{loading}}</p>
+    <p>{{loading}}</p>
+    <p>{{loading}}</p>
+    <p>{{loading}}</p>
+    <p>{{loading}}</p>
+    <p>{{loading}}</p>
+    <p>{{loading}}</p>
+</div>
+
+<div ng-include src="'views/partials/footer.html'"></div>
